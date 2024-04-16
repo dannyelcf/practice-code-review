@@ -2,6 +2,9 @@ import { sortNumbers } from './sort-numbers.js';
 
 describe('sortNumbers sorts an array of numbers', () => {
   describe('sorts positive numbers', () => {
+    it('force error', () => {
+      expect(true).toEqual(false);
+    });
     it('whole numbers', () => {
       const expected = [0, 1, 2, 3, 5];
       const received = sortNumbers([5, 2, 0, 3, 1]);
